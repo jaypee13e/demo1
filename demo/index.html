@@ -1,552 +1,322 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Demo</title>
-    <meta
-      name="description"
-      content="Demo: your ideas, sublimated to perfection. Custom printing shipped nationwide."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <header class="site">
-      <div class="wrap">
-        <a class="brand" href="#home">De<i>mo</i></a>
-        <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="links">
-          Menu
-        </button>
-        <nav class="links" id="links" aria-label="Main">
-          <a href="#home" data-v="home">Home</a>
-          <a href="#products" data-v="products">Products</a>
-          <a href="#howtoorder" data-v="howtoorder">How to order</a>
-          <a href="#order" data-v="order">Start an order</a>
-          <a href="#about" data-v="about">About</a>
-          <a href="#faq" data-v="faq">FAQ</a>
-          <a href="#contact" data-v="contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Demo | Custom Printing Services</title>
+  <meta name="description" content="Demo: Your ideas, sublimated to perfection. Custom printing shipped nationwide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <main>
-      <!-- HOME -->
-      <div class="view" id="v-home">
-        <div class="hero">
-          <i class="arc"></i>
-          <div class="wrap">
-            <div class="hero-grid">
-              <div>
-                <div class="sticker">
-                  <svg
-                    class="spark"
-                    viewBox="0 0 24 24"
-                    style="left: -34px; top: 12px; width: 38px"
-                    aria-hidden="true"
-                  >
-                    <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z" />
-                  </svg>
-                  <svg
-                    class="spark"
-                    viewBox="0 0 24 24"
-                    style="left: -8px; top: -30px; width: 24px"
-                    aria-hidden="true"
-                  >
-                    <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z" />
-                  </svg>
-                  <svg
-                    class="spark"
-                    viewBox="0 0 24 24"
-                    style="left: -24px; top: 62px; width: 22px"
-                    aria-hidden="true"
-                  >
-                    <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z" />
-                  </svg>
-                  <div class="wordmark" role="img" aria-label="Demo">
-                    <span class="p">de<span class="m">mo</span></span>
-                  </div>
-                </div>
-                <p class="tag">Your ideas, sublimated to perfection.</p>
-                <div class="btns">
-                  <a class="btn primary" href="#order">Start an order</a>
-                  <a class="btn ghost" href="#products">See what we print</a>
-                </div>
-              </div>
-              <div class="hero-side">
-                <h2>We offer:</h2>
-                <ul>
-                  <li><strong>Tarpaulin printing</strong></li>
-                  <li><strong>DTF printing</strong></li>
-                  <li><strong>Sublimation printing</strong></li>
-                  <li>Mugs</li>
-                  <li>Tumblers</li>
-                  <li>Caps</li>
-                  <li>Tote bags</li>
-                  <li>Custom apparel</li>
-                  <li>Lanyards</li>
-                  <li>Button pins</li>
-                  <li>Keychains</li>
-                  <li>Vinyl stickers</li>
-                  <li>Refrigerator magnets</li>
-                  <li>Business cards</li>
-                  <li>Hang tags</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+<body>
+  <!-- HEADER -->
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="#home">De<i>mo</i></a>
 
-        <section>
-          <div class="wrap">
-            <p class="eyebrow">Sublimation, DTF and large format</p>
-            <h2>From one mug to a whole team.</h2>
-            <p class="lead">
-              Demo is a printing service. Send us a design for a single custom mug or a full batch
-              of shirts, tarpaulins and lanyards, and we print it and ship it anywhere in the
-              Philippines.
-            </p>
-            <ul class="strip" id="homeStrip"></ul>
-          </div>
-        </section>
+      <button
+        class="menu"
+        id="menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="links"
+      >
+        Menu
+      </button>
 
-        <section class="tight">
-          <div class="wrap">
-            <h2>Most-ordered items</h2>
-            <p class="lead">Tap one to start an order for it.</p>
-            <div class="show" id="showcase"></div>
-            <p style="margin: 26px 0 0">
-              <a class="btn line" href="#products">See all products</a>
-            </p>
-          </div>
-        </section>
+      <nav class="links" id="links" aria-label="Main navigation">
+        <a href="#home" data-v="home">Home</a>
+        <a href="#products" data-v="products">Products</a>
+        <a href="#howtoorder" data-v="howtoorder">How to Order</a>
+        <a href="#order" data-v="order">Start an Order</a>
+        <a href="#about" data-v="about">About</a>
+        <a href="#faq" data-v="faq">FAQ</a>
+        <a href="#contact" data-v="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <section class="band">
-          <div class="wrap">
-            <h2>Three steps to your order</h2>
-            <p class="lead">We take orders by direct message, and we ship nationwide.</p>
-            <ol class="steps">
-              <li>
-                <h3>Send us your idea</h3>
-                <p>Message us the product, quantity and your design or rough concept.</p>
-              </li>
-              <li>
-                <h3>Approve the layout</h3>
-                <p>We prepare the layout and confirm sizes, colors and the price with you.</p>
-              </li>
-              <li>
-                <h3>We print and ship</h3>
-                <p>
-                  Once it’s printed and packed, we send it to your door anywhere in the Philippines.
-                </p>
-              </li>
-            </ol>
-          </div>
-        </section>
+  <main>
+    <!-- HOME -->
+    <div class="view" id="v-home">
+      <section class="hero">
+        <i class="arc"></i>
 
-        <section>
-          <div class="wrap">
-            <div class="cta">
-              <div>
-                <h2>Got a design in mind?</h2>
-                <p>Build your message here and paste it into a DM.</p>
-              </div>
-              <a class="btn berry" href="#order">Start an order</a>
-            </div>
-          </div>
-        </section>
-      </div>
+        <div class="wrap">
+          <div class="hero-grid">
+            <div>
+              <div class="sticker">
+                <svg
+                  class="spark"
+                  viewBox="0 0 24 24"
+                  style="left: -34px; top: 12px; width: 38px"
+                  aria-hidden="true"
+                >
+                  <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z"/>
+                </svg>
 
-      <!-- PRODUCTS -->
-      <div class="view" id="v-products">
-        <div class="page-hero">
-          <div class="wrap">
-            <h1>What we print</h1>
-            <p>
-              Apparel, drinkware, accessories, paper goods and large-format prints. Pick a category
-              to narrow the list.
-            </p>
-          </div>
-        </div>
-        <section>
-          <div class="wrap">
-            <div class="chips" role="group" aria-label="Filter by category" id="chips"></div>
-            <ul class="grid" id="grid"></ul>
-            <p class="gallery-note">
-              <b>Photos of our finished prints are coming.</b> The pictures here are illustrations.
-              Send us photos of your orders and they go straight into each product’s showcase.
-            </p>
-            <div class="cta" style="margin-top: 46px">
-              <div>
-                <h2>Don’t see it listed?</h2>
-                <p>Message us what you have in mind and we’ll tell you if we can print it.</p>
-              </div>
-              <a class="btn berry" href="#contact">Contact us</a>
-            </div>
-          </div>
-        </section>
-      </div>
+                <svg
+                  class="spark"
+                  viewBox="0 0 24 24"
+                  style="left: -8px; top: -30px; width: 24px"
+                  aria-hidden="true"
+                >
+                  <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z"/>
+                </svg>
 
-      <!-- HOW TO ORDER -->
-      <div class="view" id="v-howtoorder">
-        <div class="page-hero">
-          <div class="wrap">
-            <h1>How to order</h1>
-            <p>Orders go through direct message on Instagram or Messenger. We ship nationwide.</p>
-          </div>
-        </div>
-        <section>
-          <div class="wrap">
-            <ol class="steps light">
-              <li>
-                <h3>Send us your idea</h3>
-                <p>
-                  Message us the product, quantity and your design or rough concept. The Start an
-                  order page writes the message for you.
-                </p>
-              </li>
-              <li>
-                <h3>Approve the layout</h3>
-                <p>
-                  We prepare the layout and confirm sizes, colors and the price with you before
-                  anything is printed.
-                </p>
-              </li>
-              <li>
-                <h3>We print and ship</h3>
-                <p>
-                  Once it’s printed and packed, we send it to your door anywhere in the Philippines.
-                </p>
-              </li>
-            </ol>
-          </div>
-        </section>
-        <section class="tight">
-          <div class="wrap">
-            <div class="cols">
-              <div class="panel">
-                <h3>What to include in your message</h3>
-                <ul>
-                  <li>The product you want</li>
-                  <li>How many you need</li>
-                  <li>Your logo, photo or artwork, or a rough idea of the look</li>
-                  <li>Sizes and colors, for apparel</li>
-                  <li>When you need it by</li>
-                </ul>
-              </div>
-              <div class="panel">
-                <h3>Ready to go?</h3>
-                <p>
-                  Pick your products, add a few notes and copy the message. Paste it into a DM and
-                  we’ll take it from there.
-                </p>
-                <p style="margin-top: 16px">
-                  <a class="btn berry" href="#order">Start an order</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+                <svg
+                  class="spark"
+                  viewBox="0 0 24 24"
+                  style="left: -24px; top: 62px; width: 22px"
+                  aria-hidden="true"
+                >
+                  <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z"/>
+                </svg>
 
-      <!-- ORDER -->
-      <div class="view" id="v-order">
-        <div class="page-hero">
-          <div class="wrap">
-            <h1>Start an order</h1>
-            <p>
-              Choose your items, add the details and copy the message. Paste it into a DM and we’ll
-              reply with the price and turnaround time.
-            </p>
-          </div>
-        </div>
-        <section>
-          <div class="wrap">
-            <div class="helper">
-              <form id="orderForm" novalidate>
-                <label for="prod">Product</label>
-                <div class="line-row">
-                  <select id="prod" aria-label="Product"></select>
-                  <input
-                    id="qty"
-                    type="number"
-                    min="1"
-                    value="1"
-                    inputmode="numeric"
-                    aria-label="Quantity"
-                  />
-                </div>
-                <button class="btn line sm" id="addLine" type="button" style="margin: 0 0 18px">
-                  Add to order
-                </button>
-                <ul class="lines" id="lines" aria-label="Items in your order"></ul>
-                <label for="name">Your name</label>
-                <input id="name" autocomplete="name" placeholder="So we know who to reply to" />
-                <label for="det">Design, sizes or notes</label>
-                <textarea
-                  id="det"
-                  placeholder="e.g. Team logo on the front, sizes S to XL"
-                ></textarea>
-                <label for="need">Needed by (optional)</label>
-                <input id="need" placeholder="e.g. before the end of November" />
-              </form>
-              <div class="preview">
-                <pre id="msg" aria-live="polite"></pre>
-                <div>
-                  <div class="btns">
-                    <a
-                      class="btn berry"
-                      id="send"
-                      href="https://m.me/PrintnLoop"
-                      target="_blank"
-                      rel="noopener"
-                      >Send order on Messenger</a
-                    >
-                    <button class="btn line" id="copy" type="button">Copy message only</button>
-                  </div>
-                  <p class="note" id="status" role="status"></p>
+                <div class="wordmark" role="img" aria-label="Demo">
+                  <span class="p">de<span class="m">mo</span></span>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-      </div>
 
-      <!-- ABOUT -->
-      <div class="view" id="v-about">
-        <div class="page-hero">
-          <div class="wrap">
-            <h1>About Demo</h1>
-            <p>A printing service for personal gifts, teams, events and small brands.</p>
+              <p class="tag">Your ideas, sublimated to perfection.</p>
+
+              <div class="btns">
+                <a class="btn primary" href="#order">Start an Order</a>
+                <a class="btn ghost" href="#products">See What We Print</a>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <h2>We Offer:</h2>
+
+              <ul>
+                <li><strong>Tarpaulin Printing</strong></li>
+                <li><strong>DTF Printing</strong></li>
+                <li><strong>Sublimation Printing</strong></li>
+                <li>Mugs</li>
+                <li>Tumblers</li>
+                <li>Caps</li>
+                <li>Tote Bags</li>
+                <li>Custom Apparel</li>
+                <li>Lanyards</li>
+                <li>Button Pins</li>
+                <li>Keychains</li>
+                <li>Vinyl Stickers</li>
+                <li>Refrigerator Magnets</li>
+                <li>Business Cards</li>
+                <li>Hang Tags</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <section>
-          <div class="wrap">
-            <div class="cols">
-              <div>
-                <h3>What we do</h3>
-                <p>
-                  We turn your artwork, photos and logos into finished products. Sublimation gives
-                  mugs and tumblers vivid prints that last. DTF puts full-color transfers on shirts,
-                  caps and bags. Large-format printing covers tarpaulins and backdrops.
-                </p>
-              </div>
-              <div>
-                <h3>Who we print for</h3>
-                <p>
-                  Schools and offices that need lanyards, teams that need matching shirts, shops
-                  that need hang tags and business cards, and anyone who wants a one-off gift made.
-                </p>
-              </div>
-              <div>
-                <h3>How we work</h3>
-                <p>
-                  You send the idea. We prepare the layout and confirm sizes, colors and the price
-                  with you before printing. After printing we pack your order and ship it to your
-                  door.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="band">
-          <div class="wrap">
-            <h2>Our promise</h2>
-            <p class="lead" style="margin: 0; font-size: 22px; max-width: 40ch">
-              Your ideas, sublimated to perfection.
-            </p>
-          </div>
-        </section>
-        <section>
-          <div class="wrap">
-            <div class="cta">
-              <div>
-                <h2>Let’s print something.</h2>
-                <p>Tell us what you need and we’ll take it from there.</p>
-              </div>
-              <a class="btn berry" href="#order">Start an order</a>
-            </div>
-          </div>
-        </section>
-      </div>
+      </section>
 
-      <!-- FAQ -->
-      <div class="view" id="v-faq">
-        <div class="page-hero">
-          <div class="wrap">
-            <h1>Questions</h1>
-            <p>Quick answers before you send a message.</p>
-          </div>
+      <!-- HOME INTRODUCTION -->
+      <section>
+        <div class="wrap">
+          <p class="eyebrow">Sublimation, DTF and Large Format</p>
+
+          <h2>From One Mug to a Whole Team.</h2>
+
+          <p class="lead">
+            Demo is a printing service. Send us a design for a single
+            custom mug or a full batch of shirts, tarpaulins and lanyards,
+            and we print it and ship it anywhere in the Philippines.
+          </p>
+
+          <ul class="strip" id="homeStrip"></ul>
         </div>
-        <section>
-          <div class="wrap" style="max-width: 780px">
-            <details open>
-              <summary>How do I place an order?</summary>
+      </section>
+
+      <!-- MOST-ORDERED ITEMS -->
+      <section class="tight">
+        <div class="wrap">
+          <h2>Most-Ordered Items</h2>
+
+          <p class="lead">Tap one to start an order for it.</p>
+
+          <div class="show" id="showcase"></div>
+
+          <p style="margin: 26px 0 0">
+            <a class="btn line" href="#products">See All Products</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ORDER PROCESS -->
+      <section class="band">
+        <div class="wrap">
+          <h2>Three Steps to Your Order</h2>
+
+          <p class="lead">
+            We take orders by direct message, and we ship nationwide.
+          </p>
+
+          <ol class="steps">
+            <li>
+              <h3>Send Us Your Idea</h3>
               <p>
-                Send us a direct message on Instagram or Messenger with the product, quantity and
-                your design. The Start an order page writes that message for you.
+                Message us the product, quantity and your design
+                or rough concept.
               </p>
-            </details>
-            <details>
-              <summary>Do you ship nationwide?</summary>
-              <p>Yes. We ship nationwide, to your door anywhere in the Philippines.</p>
-            </details>
-            <details>
-              <summary>How much does it cost?</summary>
-              <p>
-                The price depends on the product, quantity and design. Send us your details and
-                we’ll confirm the price with you before we print.
-              </p>
-            </details>
-            <details>
-              <summary>Can I order just one piece?</summary>
-              <p>Yes. We print one custom mug as happily as a whole team’s shirts.</p>
-            </details>
-            <details>
-              <summary>Do I need a finished design?</summary>
-              <p>
-                No. A rough concept is enough to start. We prepare the layout and you approve it
-                before printing.
-              </p>
-            </details>
-            <details>
-              <summary>What is the difference between sublimation and DTF?</summary>
-              <p>
-                Sublimation prints the design into the surface of items like mugs and tumblers, so
-                it doesn’t peel. DTF uses a full-color transfer applied to fabric items like shirts,
-                caps and bags.
-              </p>
-            </details>
-            <details>
-              <summary>How long will my order take?</summary>
-              <p>
-                It depends on the product and quantity. Ask for the turnaround time when you send
-                your message, and we’ll give you a date.
-              </p>
-            </details>
-          </div>
-        </section>
-      </div>
+            </li>
 
-      <!-- CONTACT -->
-      <div class="view" id="v-contact">
-        <div class="page-hero">
-          <div class="wrap">
-            <h1>Contact</h1>
-            <p>The fastest way to reach us is a direct message on Instagram or Messenger.</p>
-          </div>
+            <li>
+              <h3>Approve the Layout</h3>
+              <p>
+                We prepare the layout and confirm sizes, colors
+                and the price with you.
+              </p>
+            </li>
+
+            <li>
+              <h3>We Print and Ship</h3>
+              <p>
+                Once it is printed and packed, we send it to your
+                door anywhere in the Philippines.
+              </p>
+            </li>
+          </ol>
         </div>
-        <section>
-          <div class="wrap">
-            <div class="handles">
-              <div class="handle">
-                <span>Instagram</span><b>@printnloop.2601</b>
-                <div class="row">
-                  <a
-                    class="btn berry sm"
-                    href="https://www.instagram.com/printnloop.2601"
-                    target="_blank"
-                    rel="noopener"
-                    >Open profile</a
-                  >
-                </div>
-              </div>
-              <div class="handle">
-                <span>Instagram</span><b>@miau_printnloop2601</b>
-                <div class="row">
-                  <a
-                    class="btn berry sm"
-                    href="https://www.instagram.com/miau_printnloop2601"
-                    target="_blank"
-                    rel="noopener"
-                    >Open profile</a
-                  >
-                </div>
-              </div>
-              <div class="handle">
-                <span>Facebook and Messenger</span><b>PrintnLoop</b>
-                <div class="row">
-                  <a
-                    class="btn berry sm"
-                    href="https://www.facebook.com/PrintnLoop"
-                    target="_blank"
-                    rel="noopener"
-                    >Open page</a
-                  ><a
-                    class="btn line sm"
-                    href="https://m.me/PrintnLoop"
-                    target="_blank"
-                    rel="noopener"
-                    >Message us</a
-                  >
-                </div>
-              </div>
+      </section>
+
+      <!-- HOME CALL TO ACTION -->
+      <section>
+        <div class="wrap">
+          <div class="cta">
+            <div>
+              <h2>Got a Design in Mind?</h2>
+              <p>Build your message here and paste it into a DM.</p>
             </div>
-            <p class="lead" style="margin: 28px 0 0">
-              Not sure what to write?
-              <a href="#order" style="color: var(--link); font-weight: 700">Start an order</a> and
-              we’ll draft the message.
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
 
-    <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="vTitle">
-      <div class="sheet">
-        <div class="stage" id="vStage"></div>
-        <div class="info">
-          <button class="x" id="vClose" type="button">Close</button>
-          <span class="eyebrow" id="vCat" style="margin: 0"></span>
-          <h2 id="vTitle"></h2>
-          <p id="vDesc"></p>
-          <p class="count" id="vCount"></p>
-          <div class="nav">
-            <button class="btn berry sm" id="vOrder" type="button">Order this</button>
-            <button class="btn line sm" id="vPrev" type="button">Previous</button>
-            <button class="btn line sm" id="vNext" type="button">Next</button>
+            <a class="btn berry" href="#order">Start an Order</a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
-    <footer>
-      <div class="wrap">
-        <span>Demo · Printing service · Nationwide shipping</span>
-        <nav aria-label="Footer">
-          <a href="#products">Products</a><a href="#howtoorder">How to order</a
-          ><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-        </nav>
-        <div class="accounts">
-          <span class="accounts-label">Follow and message us</span>
-          <a
-            class="account"
-            href="https://www.instagram.com/printnloop.2601"
-            target="_blank"
-            rel="noopener"
-            >@printnloop.2601</a
-          >
-          <a
-            class="account"
-            href="https://www.instagram.com/miau_printnloop2601"
-            target="_blank"
-            rel="noopener"
-            >@miau_printnloop2601</a
-          >
-          <a
-            class="account"
-            href="https://www.facebook.com/PrintnLoop"
-            target="_blank"
-            rel="noopener"
-            >Facebook: PrintnLoop</a
-          >
+    <!-- PRODUCTS -->
+    <div class="view" id="v-products">
+      <div class="page-hero">
+        <div class="wrap">
+          <h1>What We Print</h1>
+
+          <p>
+            Apparel, drinkware, accessories, paper goods and
+            large-format prints. Pick a category to narrow the list.
+          </p>
         </div>
       </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+      <section>
+        <div class="wrap">
+          <div
+            class="chips"
+            role="group"
+            aria-label="Filter by category"
+            id="chips"
+          ></div>
+
+          <ul class="grid" id="grid"></ul>
+
+          <p class="gallery-note">
+            <strong>Photos of our finished prints are coming.</strong>
+            The pictures here are illustrations. Send us photos of your
+            orders and they go straight into each product's showcase.
+          </p>
+
+          <div class="cta" style="margin-top: 46px">
+            <div>
+              <h2>Don't See It Listed?</h2>
+              <p>
+                Message us what you have in mind and we'll tell you
+                if we can print it.
+              </p>
+            </div>
+
+            <a class="btn berry" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- HOW TO ORDER -->
+    <div class="view" id="v-howtoorder">
+      <div class="page-hero">
+        <div class="wrap">
+          <h1>How to Order</h1>
+
+          <p>
+            Orders go through direct message on Instagram or Messenger.
+            We ship nationwide.
+          </p>
+        </div>
+      </div>
+
+      <section>
+        <div class="wrap">
+          <ol class="steps light">
+            <li>
+              <h3>Send Us Your Idea</h3>
+              <p>
+                Message us the product, quantity and your design or
+                rough concept. The Start an Order page writes the
+                message for you.
+              </p>
+            </li>
+
+            <li>
+              <h3>Approve the Layout</h3>
+              <p>
+                We prepare the layout and confirm sizes, colors and
+                the price with you before anything is printed.
+              </p>
+            </li>
+
+            <li>
+              <h3>We Print and Ship</h3>
+              <p>
+                Once it is printed and packed, we send it to your
+                door anywhere in the Philippines.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="tight">
+        <div class="wrap">
+          <div class="cols">
+            <div class="panel">
+              <h3>What to Include in Your Message</h3>
+
+              <ul>
+                <li>The product you want</li>
+                <li>How many you need</li>
+                <li>Your logo, photo, artwork or rough idea</li>
+                <li>Sizes and colors for apparel</li>
+                <li>When you need it by</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Ready to Go?</h3>
+
+              <p>
+                Pick your products, add a few notes and copy the
+                message. Paste it into a DM and we'll take it from there.
+              </p>
+
+              <p style="margin-top: 16px">
+                <a class="btn berry" href="#order">Start an Order</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</body>
 </html>
